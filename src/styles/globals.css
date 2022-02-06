@@ -18,3 +18,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 360px;
+  width: 360px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 360px;
+  width: 360px;
+}
