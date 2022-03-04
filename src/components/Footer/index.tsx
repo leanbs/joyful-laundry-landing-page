@@ -1,5 +1,5 @@
-import { sendEventTracker } from "@/utils/analytics/tracker";
-import { useRouter } from "next/router";
+import { sendEventTracker } from '@/utils/analytics/tracker';
+import { useRouter } from 'next/router';
 
 const Footer = () => {
   const router = useRouter();
@@ -26,7 +26,7 @@ const Footer = () => {
                     name: 'click',
                     category: `${router.pathname} - footer`,
                     label: 'phone number',
-                  })
+                  });
                 }}
               >
                 +62 856 9232 3330
@@ -58,7 +58,9 @@ const Footer = () => {
             </div>
 
             <ul className="mt-4 space-y-2 text-sm">
-              <li className="text-xs tracking-widest uppercase">Setiap hari: 6:30AM - 6PM WIB</li>
+              <li className="text-xs tracking-widest uppercase">
+                Setiap hari: 6:30AM - 6PM WIB
+              </li>
             </ul>
           </div>
           <div>
@@ -143,7 +145,7 @@ const Footer = () => {
                     name: 'click',
                     category: `${router.pathname} - footer`,
                     label: 'go to instagram',
-                  })
+                  });
                 }}
               >
                 <span className="sr-only"> Instagram </span>
@@ -244,7 +246,9 @@ const Footer = () => {
               </a> */}
             </div>
 
-            <p className="mt-4 sm:mt-0 tracking-widest uppercase">&copy; 2022 Joyful Laundry.</p>
+            <p className="mt-4 sm:mt-0 tracking-widest uppercase">
+              &copy; 2022 Joyful Laundry.
+            </p>
           </div>
 
           <p className="mt-8 text-xs text-gray-500">

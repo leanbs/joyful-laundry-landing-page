@@ -1,6 +1,6 @@
-import { sendEventTracker } from "@/utils/analytics/tracker";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { sendEventTracker } from '@/utils/analytics/tracker';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Header = () => {
   const router = useRouter();
@@ -10,7 +10,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-10">
             <Link href="/">
-              <img src="/joyful-logo.png" className="w-20 h-10 object-contain" />
+              <img
+                src="/joyful-logo.png"
+                className="w-20 h-10 object-contain"
+              />
             </Link>
 
             {/* <nav className="hidden space-x-8 text-sm font-medium lg:flex">
@@ -39,13 +42,12 @@ const Header = () => {
                   name: 'click',
                   category: `${router.pathname} - header`,
                   label: 'phone number',
-                })
+                });
               }}
             >
               Get in touch
               <br />
               +62 856 9232 3330
-
             </a>
           </div>
 
