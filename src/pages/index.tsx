@@ -52,8 +52,8 @@ const Home: NextPage = () => {
             name: 'click',
             category: `${router.pathname} - section`,
             label: 'why joyful?',
-          })
-          router.push('why')
+          });
+          router.push('why');
         }}
         buttonText="Cari tahu lebih lanjut!"
         description="Pakaian Anda akan dicuci terpisah dengan pakaian milik orang lain, dibersihkan sesuai dengan preferensi Anda, lalu akan dilipat rapi sampai ke tangan Anda."
@@ -62,7 +62,9 @@ const Home: NextPage = () => {
       <Content3Point />
       <Section
         reverse
-        onButtonClick={() => {}}
+        onButtonClick={() => {
+          console.log('t');
+        }}
         buttonText="Find out more"
         description="Pakaian Anda akan dicuci terpisah dengan pakaian milik orang lain, dibersihkan sesuai dengan preferensi Anda, lalu akan dilipat rapi sampai ke tangan Anda."
         title="Kenapa Joyful ?"

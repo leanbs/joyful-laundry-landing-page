@@ -14,7 +14,7 @@ const Why = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <a
+            <a
               className="block p-8 border border-gray-800 shadow-xl rounded-xl"
               href=""
             >
@@ -40,7 +40,9 @@ const Why = () => {
               </h3>
 
               <p className="mt-4 text-sm text-gray-500">
-                Menggunakan deterjen yang tidak berbahaya untuk kulit dan aman untuk lingkungan dan menggunakan berbagai bahan pembersih khusus untuk jenis bahan tertentu
+                Menggunakan deterjen yang tidak berbahaya untuk kulit dan aman
+                untuk lingkungan dan menggunakan berbagai bahan pembersih khusus
+                untuk jenis bahan tertentu
               </p>
             </a>
 
@@ -70,7 +72,8 @@ const Why = () => {
               </h3>
 
               <p className="mt-4 text-sm text-gray-500">
-                Air yang digunakan untuk mencuci adalah air PAM yang telah disaring kembali dengan filter
+                Air yang digunakan untuk mencuci adalah air PAM yang telah
+                disaring kembali dengan filter
               </p>
             </a>
 
@@ -100,7 +103,8 @@ const Why = () => {
               </h3>
 
               <p className="mt-4 text-sm text-gray-500">
-                Cucian Anda tidak kami gabung dengan pelanggan lainnya (1 Pelanggan 1 Mesin)
+                Cucian Anda tidak kami gabung dengan pelanggan lainnya (1
+                Pelanggan 1 Mesin)
               </p>
             </a>
 
@@ -130,7 +134,8 @@ const Why = () => {
               </h3>
 
               <p className="mt-4 text-sm text-gray-500">
-                Proses pencucian diawasi dengan kamera yang bertujuan untuk mencegah cucian yang hilang atau tertukar
+                Proses pencucian diawasi dengan kamera yang bertujuan untuk
+                mencegah cucian yang hilang atau tertukar
               </p>
             </a>
 
@@ -190,10 +195,10 @@ const Why = () => {
               </h3>
 
               <p className="mt-4 text-sm text-gray-500">
-                Kami menerima berbagai jenis cucian mulai dari bantal, karpet, gordin, dan lain-lain
+                Kami menerima berbagai jenis cucian mulai dari bantal, karpet,
+                gordin, dan lain-lain
               </p>
             </a>
-
           </div>
         </div>
       </section>

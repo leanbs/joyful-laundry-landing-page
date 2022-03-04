@@ -6,18 +6,24 @@ interface Props {
   onButtonClick: () => void;
 }
 
-const Section = ({ reverse = false, title, description, buttonText, onButtonClick }: Props) => {
+const Section = ({
+  reverse = false,
+  title,
+  description,
+  buttonText,
+  onButtonClick,
+}: Props) => {
   return (
-    <section className={`relative flex flex-wrap ${reverse? 'flex-row-reverse' : ''}`}>
+    <section
+      className={`relative flex flex-wrap ${reverse ? 'flex-row-reverse' : ''}`}
+    >
       <div className="flex items-center w-full px-4 py-12  lg:w-1/2 sm:px-6 lg:px-8 sm:py-16 lg:py-24 lg:h-96 lg:items-center">
         <div className="max-w-lg mx-auto text-center lg:text-left lg:pr-12">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
             {title}
-          </h2> 
+          </h2>
 
-          <p className="mt-4 text-gray-500">
-            {description}
-          </p>
+          <p className="mt-4 text-gray-500">{description}</p>
 
           <button
             className="inline-block px-5 py-3 mt-8 text-sm font-medium text-white bg-blue-500 rounded-lg "
