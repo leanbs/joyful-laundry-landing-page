@@ -1,7 +1,7 @@
 const Content6Point = () => {
   return (
     <section className="bg-white">
-      <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 gap-x-16 lg:items-center">
           <div className="max-w-lg px-4 mx-auto text-center lg:text-left lg:mx-0 lg:px-0">
             <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
@@ -9,15 +9,16 @@ const Content6Point = () => {
             </h2>
 
             <p className="mt-4 text-lg text-gray-500">
-              Kami memiliki berbagai layanan yang dapat kamu pilih sesuai dengan keperluan kebersihan kamu
+              Kami memiliki berbagai layanan yang dapat kamu pilih sesuai dengan
+              keperluan kebersihan kamu
             </p>
 
-            <a
+            {/* <a
               className="inline-block px-5 py-3 mt-8 font-medium text-white bg-blue-600 rounded-lg"
               href=""
             >
               Get started today
-            </a>
+            </a> */}
           </div>
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:order-first">
@@ -46,7 +47,7 @@ const Content6Point = () => {
 
               <h6 className="mt-2 font-medium text-gray-900">Laundry Kiloan</h6>
               <p className="hidden mt-1 text-sm text-gray-500 sm:block">
-                Lorem ipsum dolor sit amet consectetur.
+                Berdasarkan berat material per kilo yang dilaundry.
               </p>
             </a>
 
@@ -75,7 +76,8 @@ const Content6Point = () => {
 
               <h6 className="mt-2 font-medium text-gray-900">Dry Clean</h6>
               <p className="hidden mt-1 text-sm text-gray-500 sm:block">
-                Lorem ipsum dolor sit amet consectetur.
+                Membersihkan pakaian dengan menggunakan cairan pelarut tertentu
+                selain air.
               </p>
             </a>
 
@@ -104,7 +106,8 @@ const Content6Point = () => {
 
               <h6 className="mt-2 font-medium text-gray-900">Shoe Clean</h6>
               <p className="hidden mt-1 text-sm text-gray-500 sm:block">
-                Lorem ipsum dolor sit amet consectetur.
+                membersihkan sepatu dengan menggunakan supplies dan material
+                khusus
               </p>
             </a>
 
@@ -133,7 +136,7 @@ const Content6Point = () => {
 
               <h6 className="mt-2 font-medium text-gray-900">Setrika</h6>
               <p className="hidden mt-1 text-sm text-gray-500 sm:block">
-                Lorem ipsum dolor sit amet consectetur.
+                Jasa Setrika yang dapat dilakukan per kilo.
               </p>
             </a>
 
@@ -162,7 +165,8 @@ const Content6Point = () => {
 
               <h6 className="mt-2 font-medium text-gray-900">Laundry Satuan</h6>
               <p className="hidden mt-1 text-sm text-gray-500 sm:block">
-                Lorem ipsum dolor sit amet consectetur.
+                Banyak variasi pilihan laundry seperti karpet, gordyn, sprei,
+                baby chair.
               </p>
             </a>
 
@@ -189,9 +193,12 @@ const Content6Point = () => {
                 </svg>
               </span>
 
-              <h6 className="mt-2 font-medium text-gray-900">Laundry Aksesori</h6>
+              <h6 className="mt-2 font-medium text-gray-900">
+                Laundry Aksesori
+              </h6>
               <p className="hidden mt-1 text-sm text-gray-500 sm:block">
-                Lorem ipsum dolor sit amet consectetur.
+                Banyak variasi pilihan laundry seperti karpet, gordyn, sprei,
+                baby chair.
               </p>
             </a>
           </div>

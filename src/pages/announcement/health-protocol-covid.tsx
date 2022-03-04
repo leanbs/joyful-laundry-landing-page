@@ -1,11 +1,12 @@
 const HealthProtocolCovid = () => {
   return (
     <article>
-      <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 mx-auto">
         <div className="mx-auto space-y-8 max-w-prose">
           <h1 className="text-3xl font-bold leading-tight text-gray-900 sm:text-5xl">
             Protokol Kesehatan Joyful Laundry selama masa pandemi COVID-19
           </h1>
+          
 
           <div className="aspect-w-16 aspect-h-9">
             <img
@@ -16,30 +17,19 @@ const HealthProtocolCovid = () => {
           </div>
 
           <div className="prose prose-lg max-w-none">
-            <p>
-              Ini pegawai laundry.
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
-              laboriosam quia veritatis ullam, excepturi deserunt ex vero nemo
-              ipsam, est incidunt porro labore! Harum cupiditate suscipit
-              tempora! Aut est quod pariatur alias ab maiores iusto repellendus.
-              Maiores nihil totam delectus. Cumque eaque tempore dolor dolorem
-              natus velit officiis nisi. Doloremque.
-            </p>
-            <br />
-            <h2>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-              rerum?
-            </h2>
-
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-              dignissimos quidem autem vitae! Distinctio voluptas veritatis
-              voluptatibus laborum suscipit beatae, sint atque tenetur
-              obcaecati, expedita ipsa sit veniam eos qui?
-            </p>
+            <ol>
+              <li className="p-2 ">Semua karyawan laundry yang bekerja dipastikan dalam keadaan sehat.</li>
+              <li className="p-2 ">Jaga jarak antara karyawan laundry dan customer.</li>
+              <li className="p-2 ">Pencucian dengan deterjen konsentrat tinggi ditambah disinfektan.</li>
+              <li className="p-2 ">Menggunakan mesin pengering di atas 65°C sehingga segala virus dan bakteri akan mati.</li>
+              <li className="p-2 ">Menggunakan setrika uap boiler dengan suhu yang sangat tinggi.</li>
+              <li className="p-2 ">Menggunakan sarung tangan plastik satu kali pakai per satu customer per satu kali pencucian.</li>
+              <li className="p-2 ">Setiap karyawan wajib cuci tangan setelah mencuci pakaian customer.</li>
+              <li className="p-2 ">Setiap karyawan wajib menggunakan masker saat melayani customer.</li>
+              <li className="p-2 ">Memberlakukan sistem antar jemput gratis*.</li>
+              <li className="p-2 ">Menggunakan water diffuser disinfektan sehingga ruangan laundry tetap bersih.</li>
+              <li className="p-2 ">Rutin menyemprot ruangan laundry dengan disinfektan.</li>
+            </ol>
           </div>
         </div>
       </div>

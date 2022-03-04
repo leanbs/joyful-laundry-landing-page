@@ -1,4 +1,8 @@
+import { sendEventTracker } from "@/utils/analytics/tracker";
+import { useRouter } from "next/router";
+
 const Footer = () => {
+  const router = useRouter();
   return (
     <footer className="text-white bg-gray-900 lg:grid lg:grid-cols-5">
       <aside className="hidden lg:relative lg:col-span-2 lg:block">
@@ -16,7 +20,14 @@ const Footer = () => {
               <span className="text-xs tracking-widest uppercase">Hubungi</span>
               <a
                 className="block text-2xl sm:text-3xl hover:opacity-75 my-2"
-                href=""
+                href="tel:+62856-9232-7777"
+                onClick={() => {
+                  sendEventTracker({
+                    name: 'click',
+                    category: `${router.pathname} - footer`,
+                    label: 'phone number',
+                  })
+                }}
               >
                 +62 856 9232 3330
               </a>
@@ -52,7 +63,7 @@ const Footer = () => {
           </div>
           <div>
             <img src="/joyful-logo.png" className="w-56 object-contain mb-8" />
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
                 <p className="font-medium">Support</p>
 
@@ -98,9 +109,9 @@ const Footer = () => {
                   </a>
                 </nav>
               </div>
-            </div>
+            </div> */}
             <div className="flex mt-16 space-x-3">
-              <a
+              {/* <a
                 className="p-2 border rounded-full border-white/25 hover:opacity-75"
                 href=""
                 target="_blank"
@@ -120,13 +131,20 @@ const Footer = () => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </a> */}
 
               <a
                 className="p-2 border rounded-full border-white/25 hover:opacity-75"
-                href=""
+                href="https://www.instagram.com/joyfullaundry"
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => {
+                  sendEventTracker({
+                    name: 'click',
+                    category: `${router.pathname} - footer`,
+                    label: 'go to instagram',
+                  })
+                }}
               >
                 <span className="sr-only"> Instagram </span>
 
@@ -144,7 +162,7 @@ const Footer = () => {
                 </svg>
               </a>
 
-              <a
+              {/* <a
                 className="p-2 border rounded-full border-white/25 hover:opacity-75"
                 href=""
                 target="_blank"
@@ -204,7 +222,7 @@ const Footer = () => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

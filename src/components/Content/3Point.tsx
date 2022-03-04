@@ -8,10 +8,7 @@ const Content3Point = () => {
           </h2>
 
           <p className="mt-6 text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Kamu dirumah aja biar kami yang jemput cucian kamu
           </p>
         </div>
 
@@ -42,7 +39,8 @@ const Content3Point = () => {
               </dt>
 
               <dd className="mt-1 text-gray-300">
-                Beritahu kami melalui Whatsapp. dan kurir kami akan datang menjemput cucian Anda di jam tertentu.
+                Beritahu kami melalui Whatsapp. dan kurir kami akan datang
+                menjemput cucian Anda di jam tertentu.
               </dd>
             </div>
           </div>
@@ -68,12 +66,11 @@ const Content3Point = () => {
             </span>
 
             <div className="ml-3 md:mt-3 md:ml-0">
-              <dt className="text-xl font-medium">
-                Nikmati waktu bebas Anda
-              </dt>
+              <dt className="text-xl font-medium">Nikmati waktu bebas Anda</dt>
 
               <dd className="mt-1 text-gray-300">
-                Nikmati 4 jam waktu luang setiap minggu dan perawatan baju Anda ke karyawan kami.
+                Nikmati 4 jam waktu luang setiap minggu dan perawatan baju Anda
+                ke karyawan kami.
               </dd>
             </div>
           </div>
