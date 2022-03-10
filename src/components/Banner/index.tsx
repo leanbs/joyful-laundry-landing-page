@@ -1,4 +1,7 @@
+import { useRouter } from 'next/router';
+
 const Banner = () => {
+  const router = useRouter();
   return (
     <section className="relative bg-white">
       <img
@@ -26,17 +29,19 @@ const Banner = () => {
           <div className="flex flex-wrap gap-4 mt-8 text-center">
             <a
               className="block w-full px-12 py-3 text-sm font-medium text-white rounded shadow bg-rose-600 sm:w-auto active:bg-rose-500 hover:bg-rose-700 focus:outline-none focus:ring"
-              href="/get-started"
+              onClick={() => {
+                router.push('/track/laundry');
+              }}
             >
-              Get Started
+              Lacak
             </a>
 
-            <a
+            {/* <a
               className="block w-full px-12 py-3 text-sm font-medium bg-white rounded shadow text-rose-600 sm:w-auto hover:text-rose-700 active:text-rose-500 focus:outline-none focus:ring"
               href="/about"
             >
               Learn More
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
