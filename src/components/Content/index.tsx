@@ -8,11 +8,11 @@ const Content = () => {
               Joyful Laundry
             </h2>
 
-            <p className="mt-6 text-sm text-gray-600">
+            {/* <p className="mt-6 text-sm text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
               ratione sed cumque molestiae dolores eaque odit corporis accusamus
               reprehenderit laborum?
-            </p>
+            </p> */}
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2">
@@ -115,7 +115,7 @@ const Content = () => {
               </p>
             </a>
 
-            <a
+            {/* <a
               className="block p-8 border-2 border-white lg:pr-16 bg-gradient-to-b from-white to-blue-50"
               href=""
             >
@@ -146,7 +146,7 @@ const Content = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aliquam, temporibus.
               </p>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

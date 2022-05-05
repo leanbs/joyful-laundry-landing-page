@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         />
         <meta name="description" content="Description" />
         <meta name="keywords" content="Keywords" />
-        <title>Next.js PWA Example</title>
+        <title>Joyful Laundry</title>
 
         <link rel="manifest" href="/manifest.json" />
         <link
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
         title="Kenapa Joyful ?"
       />
       <Content3Point />
-      <Section
+      {/* <Section
         reverse
         onButtonClick={() => {
           console.log('t');
@@ -68,9 +68,9 @@ const Home: NextPage = () => {
         buttonText="Find out more"
         description="Pakaian Anda akan dicuci terpisah dengan pakaian milik orang lain, dibersihkan sesuai dengan preferensi Anda, lalu akan dilipat rapi sampai ke tangan Anda."
         title="Kenapa Joyful ?"
-      />
+      /> */}
       <Content />
-      <FAQ />
+      {/* <FAQ /> */}
     </div>
   );
 };
