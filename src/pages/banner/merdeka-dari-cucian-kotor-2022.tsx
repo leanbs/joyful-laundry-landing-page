@@ -24,7 +24,7 @@ const IndependenceDay = () => {
   const handleDownload = () => {
     download(
       'https://joyful.id/image/joyful-laundry-merdeka.jpg',
-      `https://joyful.id/image/joyful-laundry-merdeka.jpg`,
+      `joyful-laundry-merdeka.jpg`,
     );
   };
 
@@ -35,6 +35,7 @@ const IndependenceDay = () => {
           alt="joyful-banner-merdeka-2022"
           src="/image/joyful-laundry-merdeka.jpg"
           className="object-contain"
+          placeholder="blur"
           layout="responsive"
           width={1200}
           height={1200}
