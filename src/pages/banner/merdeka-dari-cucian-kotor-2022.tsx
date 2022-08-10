@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import download from 'downloadjs';
+import { sendEventTracker } from '@/utils/analytics/tracker';
 
 const IndependenceDay = () => {
   const handleShare = async () => {
@@ -18,6 +19,12 @@ const IndependenceDay = () => {
     };
     navigator.share(shareData as any).then(() => {
       console.log('Shared successfully');
+
+      sendEventTracker({
+        name: 'click',
+        category: `banner - merdeka 2022`,
+        label: 'share banner merdeka 2022',
+      });
     });
   };
 
@@ -26,6 +33,12 @@ const IndependenceDay = () => {
       'https://joyful.id/image/joyful-laundry-merdeka.jpg',
       `joyful-laundry-merdeka.jpg`,
     );
+
+    sendEventTracker({
+      name: 'click',
+      category: `banner - merdeka 2022`,
+      label: 'download banner merdeka 2022',
+    });
   };
 
   return (
@@ -35,7 +48,6 @@ const IndependenceDay = () => {
           alt="joyful-banner-merdeka-2022"
           src="/image/joyful-laundry-merdeka.jpg"
           className="object-contain"
-          placeholder="blur"
           layout="responsive"
           width={1200}
           height={1200}

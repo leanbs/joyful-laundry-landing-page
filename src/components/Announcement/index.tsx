@@ -16,8 +16,7 @@ const Announcement = () => {
           router.push('/announcement/health-protocol-covid');
         }}
       >
-        Pelajari bagaimana Joyful Laundry menjaga pelanggan dan karyawan agar
-        tetap aman selama masa pandemi COVID-19 disini &rarr;
+        Prokes Joyful Laundry selama masa pandemi &rarr;
       </a>
     </aside>
   );

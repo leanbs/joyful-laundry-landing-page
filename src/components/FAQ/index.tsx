@@ -21,14 +21,14 @@ const FAQ = () => {
           </svg>
         </summary>
 
-        <div className="px-4 mt-4">
+        {/* <div className="px-4 mt-4">
           <p className="leading-relaxed text-gray-700">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
             veritatis molestias culpa in, recusandae laboriosam neque aliquid
             libero nesciunt voluptate dicta quo officiis explicabo consequuntur
             distinctio corporis earum similique!
           </p>
-        </div>
+        </div> */}
       </details>
 
       <details className="group">
@@ -51,14 +51,14 @@ const FAQ = () => {
           </svg>
         </summary>
 
-        <div className="px-4 mt-4">
+        {/* <div className="px-4 mt-4">
           <p className="leading-relaxed text-gray-700">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
             veritatis molestias culpa in, recusandae laboriosam neque aliquid
             libero nesciunt voluptate dicta quo officiis explicabo consequuntur
             distinctio corporis earum similique!
           </p>
-        </div>
+        </div> */}
       </details>
 
       <details className="group">
@@ -83,14 +83,14 @@ const FAQ = () => {
           </svg>
         </summary>
 
-        <div className="px-4 mt-4">
+        {/* <div className="px-4 mt-4">
           <p className="leading-relaxed text-gray-700">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
             veritatis molestias culpa in, recusandae laboriosam neque aliquid
             libero nesciunt voluptate dicta quo officiis explicabo consequuntur
             distinctio corporis earum similique!
           </p>
-        </div>
+        </div> */}
       </details>
     </div>
   );

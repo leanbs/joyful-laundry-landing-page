@@ -251,7 +251,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <p className="mt-8 text-xs text-gray-500">
+          {/* <p className="mt-8 text-xs text-gray-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
             mollitia quia quod repellendus. Porro harum, odio dolore
             perspiciatis praesentium provident esse consequatur quibusdam
@@ -259,7 +259,7 @@ const Footer = () => {
             repellat sed earum? Debitis quaerat facilis animi. Odio natus
             nostrum laboriosam impedit magnam praesentium asperiores consectetur
             ipsum.
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>
