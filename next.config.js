@@ -1,12 +1,16 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const withPWA = require('next-pwa');
-
-module.exports = withPWA({
+const nextConfig = {
   reactStrictMode: true,
-  pwa: {
-    disable: process.env.NODE_ENV === 'development',
-    register: true,
-    sw: 'service-worker.js',
-    dest: 'public',
+  images: {
+    domains: ['res.cloudinary.com'],
   },
+};
+
+const withPWA = require('next-pwa')({
+  disable: process.env.NODE_ENV === 'development',
+  register: true,
+  sw: 'service-worker.js',
+  dest: 'public',
 });
+
+module.exports = withPWA(nextConfig);
