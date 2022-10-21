@@ -17,6 +17,7 @@ specifiers:
   '@tabler/icons': ^1.106.0
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^13.4.0
+  '@types/crypto-js': ^4.1.1
   '@types/downloadjs': ^1.4.3
   '@types/js-cookie': ^3.0.2
   '@types/node': 18.11.2
@@ -100,6 +101,7 @@ devDependencies:
   '@playwright/test': 1.27.1
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_react-dom@18.2.0+react@18.2.0
+  '@types/crypto-js': 4.1.1
   '@types/downloadjs': 1.4.3
   '@types/js-cookie': 3.0.2
   '@types/node': 18.11.2
@@ -2510,6 +2512,10 @@ packages:
     resolution: {integrity: sha512-K2waXdXBi2302XUdcHcR1jCeU0LL4TD9HRs/gk0N2Xvrht+G/BfJa4QObBQZfhMdxiCpV3COl5Nfq4uKTeTnJA==}
     dependencies:
       '@babel/types': 7.16.8
+    dev: true
+
+  /@types/crypto-js/4.1.1:
+    resolution: {integrity: sha512-BG7fQKZ689HIoc5h+6D2Dgq1fABRa0RbBWKBd9SP/MVRVXROflpm5fhwyATX5duFmbStzyzyycPB8qUYKDH3NA==}
     dev: true
 
   /@types/downloadjs/1.4.3:
