@@ -2,7 +2,7 @@ import { useState } from 'react';
 import useGetOrder from '@/hooks/use-get-order-detail';
 import useLogin from '@/hooks/use-login';
 import useUpdateOrderStatus from '@/hooks/use-update-order-status';
-import QrReader from 'react-qr-scanner';
+// import QrReader from 'react-qr-scanner';
 
 const DeliveryLogin = () => {
   const login = useLogin;
@@ -39,7 +39,7 @@ const DeliveryLogin = () => {
     <div>
       {loginData?.name ? <h2>Hello {loginData.name}</h2> : null}
       <div className="p-4">
-        <QrReader
+        {/* <QrReader
           delay={100}
           onScan={(data: any) => {
             if (!!data) {
@@ -61,7 +61,7 @@ const DeliveryLogin = () => {
           }}
           onError={(err: any) => console.log(err)}
           style={{ width: '100%', height: 240 }}
-        />
+        /> */}
         <p>{JSON.stringify(data)}</p>
       </div>
       <div className="shadow-xl p-4">
