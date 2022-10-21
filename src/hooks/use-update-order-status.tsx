@@ -10,22 +10,25 @@ import { fetchWithCredentials } from '@/utils/fetch';
 
 interface Props {
   order_no: string | number;
-  user_id: number; 
+  user_id: number;
   end_order?: boolean;
 }
 
 async function useUpdateOrderStatus({ order_no, user_id, end_order }: Props) {
-  const { data: result } = await fetchWithCredentials.put(`order-status/${order_no}`, {
-    user_id, end_order
-  });
-  console.log(result, 'resu')
+  const { data: result } = await fetchWithCredentials.put(
+    `order-status/${order_no}`,
+    {
+      user_id,
+      end_order,
+    },
+  );
+  console.log(result, 'resu');
   return {
     result: result || {},
   };
 }
 
 export default useUpdateOrderStatus;
-
 
 // function useUpdateOrderStatus({ callback }: Props) {
 //   const alert = useAlert();

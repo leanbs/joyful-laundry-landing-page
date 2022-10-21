@@ -18,4 +18,4 @@ export const sendEventTracker = ({ name, label, category }: EventParams) => {
   baseAnalytics().then(({ gaAll }) => {
     gaAll('send', 'event', category, name, label);
   });
-}; 
+};
