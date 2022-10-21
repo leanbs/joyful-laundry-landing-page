@@ -1,4 +1,3 @@
-import Input from '@/components/Input';
 import useGetOrderWithPhoneCheck from '@/hooks/useGetOrderWithPhoneCheck';
 import type { Order, OrderDetail } from '@/types/Order';
 import { getStatusString } from '@/utils/getLastStatus';
@@ -36,8 +35,6 @@ const Laundry = () => {
   });
   const [isAllowed, setIsAllowed] = useState(false);
   const [order_num, setOrderNum] = useState('');
-  // const [phone_num, setPhoneNum] = useState('');
-  // const [message, setMessage] = useState('');
   const { query } = useRouter();
 
   const orderNo = order_num || query.order_number || '-';
@@ -92,23 +89,6 @@ const Laundry = () => {
                       detail.service.price,
                     )} x ${detail.quantity}`}
                   </Text>
-                  {/* <div
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      width: '100%',
-                    }}
-                  >
-                    <div>
-                      <Text size="sm">{detail.service.name}</Text>
-                      <Text size="sm">{detail.service.service_group.name}</Text>
-                    </div>
-                    <div>
-                      <Text size="sm">
-                        {`${toIDR(detail.service.price)} x ${detail.quantity}`}
-                      </Text>
-                    </div>
-                  </div> */}
                 </List.Item>
               );
             })}
