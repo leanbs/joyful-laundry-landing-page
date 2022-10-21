@@ -27,7 +27,7 @@ const Presence = () => {
       password: data.password,
     });
 
-    if (res.data.status === 200) {
+    if (res?.data.status === 200) {
       await fetch.post(
         `/presence`,
         {
