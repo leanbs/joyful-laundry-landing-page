@@ -1,7 +1,7 @@
 const DeliveryLaundry = () => {
   return (
     <div>
-      <div>wasu</div>
+      <div>coming soon</div>
     </div>
   );
 };

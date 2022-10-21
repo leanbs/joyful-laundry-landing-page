@@ -31,11 +31,11 @@ const Footer = () => {
               >
                 +62 856 9232 3330
               </a>
-              <div className="font-small mb-4">
+              <span className="font-small mb-4">
                 <span className="text-xs tracking-widest uppercase">
                   Jln.Bandengan Utara 1 No 21A
                 </span>
-              </div>
+              </span>
             </p>
             <div className="mapouter">
               <div className="gmap_canvas">

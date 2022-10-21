@@ -16,7 +16,7 @@ const DeliveryLogin = () => {
     setLoginData({
       id: res?.data?.user?.id,
       name: res.data?.user?.name,
-    })
+    });
   };
 
   const handleGetOrder = async (id: string) => {
@@ -26,7 +26,11 @@ const DeliveryLogin = () => {
   };
 
   const handleUpdateStatus = async () => {
-    const res: any = await useUpdateOrderStatus({ order_no: order?.order_no, user_id: loginData?.id || 1, end_order: true });
+    const res: any = await useUpdateOrderStatus({
+      order_no: order?.order_no,
+      user_id: loginData?.id || 1,
+      end_order: true,
+    });
     setOrder(res.order);
     console.log(res, 'z');
   };
@@ -39,7 +43,7 @@ const DeliveryLogin = () => {
           delay={100}
           onScan={(data: any) => {
             if (!!data) {
-              const res = data?.text || "";
+              const res = data?.text || '';
 
               if (res) {
                 setData(res);
@@ -53,7 +57,6 @@ const DeliveryLogin = () => {
                   return handleGetOrder(action[1]);
                 }
               }
-              
             }
           }}
           onError={(err: any) => console.log(err)}
@@ -65,7 +68,12 @@ const DeliveryLogin = () => {
         <div>Nota: {order?.order_no}</div>
         <div>Customer: {order?.customer?.name}</div>
         <div className="mb-4">Pembayaran: {order?.payment_method?.name}</div>
-        <button className="bg-blue-500 rounded-md text-white px-4 py-1" onClick={handleUpdateStatus}>Sudah Selesai</button>
+        <button
+          className="bg-blue-500 rounded-md text-white px-4 py-1"
+          onClick={handleUpdateStatus}
+        >
+          Sudah Selesai
+        </button>
       </div>
     </div>
   );
