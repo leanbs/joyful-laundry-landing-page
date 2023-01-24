@@ -15,7 +15,7 @@ const Presence = () => {
   const { reload } = useRouter();
 
   const { ref } = useZxing({
-    timeBetweenDecodingAttempts: 5000,
+    timeBetweenDecodingAttempts: 10000,
     async onResult(result) {
       setResult(result.getText());
 
